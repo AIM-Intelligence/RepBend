@@ -5,7 +5,7 @@ Representation Bending is a method for modifying internal representations of LLM
 
 This repo is the code and model for the paper "Representation Bending for Large Language Model Safety"
 
-<img src="./github_assets/repbend.png"/>
+<img src="./github_assets/repbend.png" width="70%"/>
 
 ## Paper
 ### Representation Bending for Large Language Model Safety
@@ -18,11 +18,11 @@ Idea:  Existing safety-enhancing techniques, such as fine-tuning with human feed
 
 ## Interesting Results
 
-<img src="./github_assets/bar.png"/>
+<img src="./github_assets/bar.png" width="50%"/>
 
 RepBend has the lowest Average Attack Success Rate (ASR) across five black-box and three white-box access attacks on Mistral 7B and Llama3 8B models.
 
-<img src="./github_assets/logitlens.png"/>
+<img src="./github_assets/logitlens.png" width="100%"/>
 
 Heatmaps cells show next token prediction and colors show entropy (blue: high confidence, red: low confidence) across layers (Y-axis) for tokens (X-axis). (a) Original instruction-tuned model LLama 3 8B complies with the request. (b) RepBend refuses the request with high certainty (blue heatmaps at the top). (c) Even when a complying sequence is forced, RepBend's representation diverges to generate random tokens.
 
@@ -86,12 +86,11 @@ Once training is complete, evaluate the model using the [AI2 Safety Tool](https:
 ## Citation
 If you use Representation Bending in your work, please cite:
 ```
-@article{your_paper,
-  title={Representation Bending},
-  author={Your Name},
-  journal={arXiv},
-  year={2025},
-  eprint={arxiv_link},
+@article{repbend,
+  title={Representation Bending for Large Language Model Safety},
+  author={Yousefpour, Ashkan and Kim, Taeheon and Kwon, Ryan S and Lee, Seungbeen and Jeung, Wonje and Han, Seungju and Wan, Alvin and Ngan, Harrison and Yu, Youngjae and Choi, Jonghyun},
+  journal={arXiv preprint arXiv:2504.01550},
+  year={2025}
 }
 ```
 
