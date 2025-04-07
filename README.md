@@ -3,7 +3,28 @@
 ## Overview
 Representation Bending is a method for modifying internal representations of LLMs to improve safety while maintaining general capabilities.
 
-Arxiv: 
+This repo is the code and model for the paper "Representation Bending for Large Language Model Safety"
+
+<img src="./github_assets/repbend.png"/>
+
+## Paper
+### Representation Bending for Large Language Model Safety
+
+Authors: Ashkan Yousefpour, Taeheon Kim, Ryan S Kwon, Seungbeen Lee, Wonje Jeung, Seungju Han, Alvin Wan, Harrison Ngan, Youngjae Yu, Jonghyun Choi
+
+Arxiv: [Link](https://arxiv.org/abs/2504.01550)
+
+Idea:  Existing safety-enhancing techniques, such as fine-tuning with human feedback or adversarial training, are still vulnerable as they address specific threats and often fail to generalize across unseen attacks, or require manual system-level defenses.a novel approach that fundamentally disrupts the representations underlying harmful behaviors in LLMs, offering a scalable solution to enhance (potentially inherent) safety. RepBend brings the idea of activation steering – simple vector arithmetic for steering model’s behavior during inference – to loss-based fine-tuning. RepBend achieves state-of-the-art performance, outperforming prior methods such as Circuit Breaker, RMU, and NPO, with up to 95% reduction in attack success rates across diverse jailbreak benchmarks.
+
+## Interesting Results
+
+<img src="./github_assets/bar.png"/>
+
+RepBend has the lowest Average Attack Success Rate (ASR) across five black-box and three white-box access attacks on Mistral 7B and Llama3 8B models.
+
+<img src="./github_assets/logitlens.png"/>
+
+Heatmaps cells show next token prediction and colors show entropy (blue: high confidence, red: low confidence) across layers (Y-axis) for tokens (X-axis). (a) Original instruction-tuned model LLama 3 8B complies with the request. (b) RepBend refuses the request with high certainty (blue heatmaps at the top). (c) Even when a complying sequence is forced, RepBend's representation diverges to generate random tokens.
 
 **Pretrained Models:**  
 - [Mistral 7B](https://huggingface.co/AIM-Intelligence/RepBend_Mistral_7B)  
