@@ -27,8 +27,10 @@ RepBend has the lowest Average Attack Success Rate (ASR) across five black-box a
 Heatmaps cells show next token prediction and colors show entropy (blue: high confidence, red: low confidence) across layers (Y-axis) for tokens (X-axis). (a) Original instruction-tuned model LLama 3 8B complies with the request. (b) RepBend refuses the request with high certainty (blue heatmaps at the top). (c) Even when a complying sequence is forced, RepBend's representation diverges to generate random tokens.
 
 **Pretrained Models:**  
-- [Mistral 7B](https://huggingface.co/AIM-Intelligence/RepBend_Mistral_7B)  
-- [Llama3 8B](https://huggingface.co/AIM-Intelligence/RepBend_Llama3_8B)
+- Huggingface [Mistral 7B](https://huggingface.co/AIM-Intelligence/RepBend_Mistral_7B)  
+- Huggingface [Llama3 8B](https://huggingface.co/AIM-Intelligence/RepBend_Llama3_8B)
+- Huggingface [Mistral 7B LoRA](https://huggingface.co/AIM-Intelligence/RepBend_Mistral_7B_LoRA)  
+- Huggingface [Llama3 8B LoRA](https://huggingface.co/AIM-Intelligence/RepBend_Llama3_8B_LoRA)
 
 ## Setup
 ### Prerequisites
