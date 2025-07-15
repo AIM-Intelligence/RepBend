@@ -88,10 +88,11 @@ Once training is complete, evaluate the model using the [AI2 Safety Tool](https:
 ## Citation
 If you use Representation Bending in your work, please cite:
 ```
-@article{repbend,
+@inproceedings{repbend,
   title={Representation Bending for Large Language Model Safety},
   author={Yousefpour, Ashkan and Kim, Taeheon and Kwon, Ryan S and Lee, Seungbeen and Jeung, Wonje and Han, Seungju and Wan, Alvin and Ngan, Harrison and Yu, Youngjae and Choi, Jonghyun},
-  journal={arXiv preprint arXiv:2504.01550},
+  booktitle = {Proceedings of the 63st Annual Meeting of the Association for Computational Linguistics},
+  month = {July},
   year={2025}
 }
 ```
